@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 計算首頁</title>
+</head>
+
+<body>
+    <h1>這是首頁</h1>
+
+    <form action="result" method="POST">
+        {% csrf_token %}
+
+        <h6>請輸入身高(cm)</h6>
+        <input type="number" name="height">
+        <h6>請輸入體重(kg)</h6>
+        <input type="number" name="weight">
+        <br>
+        <button type="submit">送出</button>
+
+    </form>
+</body>
+
+</html>
